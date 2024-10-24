@@ -1,10 +1,10 @@
-import mongoose,{Schema, model} from "mongoose";
+import mongoose,{Schema, model, Types} from "mongoose";
 
 const schema = new Schema(
     {
         status:{
             type:String,
-            default:pending,
+            default:"pending",
             enum:["pending", "accepted", "rejected"],
         },
 
